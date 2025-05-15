@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:complexType name="DatosBasicos">
+    <xs:sequence>
+     <xs:element name="nombre" type="xs:string"/>
+     <xs:element name="apellido" type="xs:string"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DatosEstudiante">
+    <xs:complexContent>
+        <xs:extension base="DatosBasicos">
+            <xs:sequence>
+                <xs:element name="NotaExpediente" type="xs:decimal"/>
+            </xs:sequence>
+        </xs:extension> 
+    </xs:complexContent>
+</xs:complexType>
+
+ <xs:complexType name="DatosDocente">
+    <xs:complexContent>
+      <xs:extension base="DatosBasicos">
+        <xs:sequence>
+          <xs:element name="salario" type="xs:decimal"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+   <xs:element name="instituto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="estudiante" type="DatosEstudiante" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="docente" type="DatosDocente" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  </xs:schema>
