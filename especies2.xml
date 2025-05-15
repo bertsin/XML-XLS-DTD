@@ -4,7 +4,7 @@
 <!ELEMENT especie (nombre, familia, distribucion)>
 <!ATTLIST especie 
         estado (extinto | amenazado | sin-peligro) #REQUIRED   
-         identificador ID #REQUIRED>
+        identificador ID #REQUIRED>
 <!ELEMENT nombre (#PCDATA)>
 <!ATTLIST nombre nombre-cientifico CDATA>
 <!ELEMENT familia (#PCDATA)>
@@ -12,19 +12,19 @@
 <!ELEMENT zona (#PCDATA)>
 ]>
 <especies>
-<especie identificador="id_1" estado="amenazado">
-<nombre nombre-cientifico="Monachus monachus">Foca monje</nombre>
-<familia>Phocidae</familia>
-<distribucion>
-<zona>Costa Atlántica</zona>
-<zona>Costa Mediterránea</zona>
-</distribucion>
-</especie>
-<especie identificador="id_2" estado="sin-peligro">
-<nombre nombre-cientifico="Canis Lupus Familiaris">Perro</nombre>
-<familia>Canis</familia>
-<distribucion>
-<zona>Global</zona>
-</distribucion>
-</especie>
+  <especie identificador="id_1" estado="amenazado">
+    <nombre nombre-cientifico="Monachus monachus">Foca monje</nombre>
+    <familia>Phocidae</familia>
+    <distribucion>
+      <zona>Costa Atlántica</zona>
+      <zona>Costa Mediterránea</zona>
+    </distribucion>
+  </especie>
+  <especie identificador="id_2" estado="sin-peligro">
+    <nombre nombre-cientifico="Canis Lupus Familiaris">Perro</nombre>
+    <familia>Canis</familia>
+    <distribucion>
+      <zona>Global</zona>
+    </distribucion>
+  </especie>
 </especies>
