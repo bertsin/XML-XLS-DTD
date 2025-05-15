@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Instituto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:xsi:noNamespaceSchemaLocation="instituto.xsd">
+
+<Estudiante NIA="123456">
+    <Nombre>Lucía</Nombre>
+    <Apellido>Pérez</Apellido>
+    <NotaExpediente>8.7</NotaExpediente>
+</Estudiante>
+
+<Docente departamento="Matemáticas">
+    <Nombre>Alberto</Nombre>
+    <Apellido>García</Apellido>
+    <Salario>2200</Salario>
+    </Docente>
+
+    </Instituto>
